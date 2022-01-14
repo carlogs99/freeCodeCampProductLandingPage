@@ -90,12 +90,13 @@ nav a {
     padding: 20px;
 }
 
-.full-screen-video-content h1 {
+h1 {
     background-color: transparent;
     color: var(--hero-text-color);
     font-size: 64px;
     text-align: center;
     padding: 0px 2.5vw 0px 2.5vw;
+    font-family: 'Merriweather', Times, serif;
 }
 
 form input {
@@ -172,7 +173,7 @@ form input:focus {
 }
 
 .product {
-    background-color: var(--dark-bg-color);
+    background: linear-gradient(135deg, var(--dark-bg-color) 60%, black);
     margin: 30px;
     padding: 30px;
     height: 50vh;
@@ -183,18 +184,23 @@ form input:focus {
     align-items: center;
     color: var(--footer-text-color);
     box-shadow: 5px 5px 5px var(--dark-bg-color);
-    border: 5px inset var(--features-icon-color);
+    border: 5px inset var(--nav-bar-bg-color);
 }
 
 .level {
     font-family: 'Merriweather', Times, serif;
-    font-size: 22px;
+    font-size: 32px;
     color: var(--hero-text-color);
+    text-align: center;
 }
 
 .product ul {
     font-family: 'Merriweather', Times, serif;
     font-size: 18px;
+}
+
+.product h2 {
+    color: var(--features-icon-color);
 }
 
 @media (orientation: portrait) {
@@ -238,11 +244,6 @@ footer li {
     padding-bottom: 2.5vh;
 }
 
-h1 {
-    font-family: 'Merriweather', Times, serif;
-    font-size: 64px;
-}
-
 h2, p {
     font-family: 'Merriweather', Times, serif;
 }
@@ -269,6 +270,16 @@ a {
 @media (min-width:650px) {
     .material-icons.md-60 {
         font-size: 60px;
+    }
+}
+
+@media (max-width: 450px) {
+    h1 {
+        font-size: 54px;
+    }
+
+    #features h2 {
+        font-size: 32px;
     }
 }
 
